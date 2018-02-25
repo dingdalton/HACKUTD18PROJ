@@ -83,7 +83,7 @@ const AppContent = TabNavigator(
         const { routeName } = navigation.state;
         let iconName;
         if (routeName === 'Home') {
-          iconName = `ios-home${focused ? '' : '-outline'}`;
+          iconName = `ios-cash${focused ? '' : '-outline'}`;
         } else if (routeName === 'More') {
           iconName = `ios-more${focused ? '' : '-outline'}`;
         }
@@ -99,8 +99,8 @@ const AppContent = TabNavigator(
       style: {
         borderTopColor: "transparent",
         backgroundColor: 'white',
-        elevation: 10,
-        shadowOpacity: 10,
+        elevation: 1,
+        shadowOpacity: 0.1,
       },
       activeTintColor: '#000000',
       inactiveTintColor: 'gray',
